@@ -1,0 +1,317 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shridhar | Portfolio</title>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #0d47a1;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid white;
+      margin-bottom: 1rem;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: yellow;
+    }
+
+    #typing {
+      font-size: 1.2rem;
+      color: #ffeb3b;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+
+    section {
+      padding: 2rem;
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+      color: #0d47a1;
+    }
+
+    .projects, .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    a.button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #0d47a1;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    a.button:hover {
+      color: yellow;
+    }
+
+    /* Dark Mode */
+    #toggle-dark {
+      background: white;
+      color: #0d47a1;
+      border: none;
+      padding: 10px 20px;
+      font-weight: 600;
+      margin-top: 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #toggle-dark:hover {
+      background: yellow;
+    }
+
+    .dark {
+      background-color: #121212;
+      color: white;
+    }
+
+    .dark header {
+      background-color: #222;
+    }
+
+    .dark .card {
+      background-color: #1e1e1e;
+      color: white;
+    }
+
+    .dark footer {
+      background-color: #222;
+    }
+
+    /* Scroll to Top Button */
+    #topBtn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 12px 16px;
+      font-size: 20px;
+      background: #0d47a1;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+    }
+
+    #topBtn:hover {
+      background: yellow;
+      color: black;
+    }
+
+    footer {
+      background-color: #0d47a1;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid gray;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="profile.jpg" alt="Profile">
+    <h1>Hi, I'm Shridhar</h1>
+   </header>
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3><i class="fa-solid fa-hand-pointer"></i> Virtual Mouse (Hand Gestures)</h3>
+        <p>Created a virtual mouse using hand gesture detection.</p>
+      </div>
+      <div class="card">
+        <h3><i class="fa-solid fa-eye"></i> Eye-Controlled Mouse</h3>
+        <p>Developed a mouse controlled using eye tracking.</p>
+      </div>
+    </div>
+  </section>
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="card">C, C++, Python</div>
+      <div class="card">HTML, CSS, JavaScript</div>
+      <div class="card">Git, GitHub</div>
+    </div>
+  </section>
+  <section>
+    <p>
+      <a class="button" href="resume.pdf" download>Download Resume</a>
+    </p>
+  </section>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: 
+      <a href="mailto:shridhargurav754@gmail.com">shridhargurav754@gmail.com</a>
+    </p>
+    <p>GitHub: 
+      <a href="https://github.com/shridhargurav754-dev" target="_blank">GitHub Profile</a>
+    </p>
+    <p>LinkedIn: 
+      <a href="https://www.linkedin.com/in/shridhar-gurav-301413378" target="_blank">
+        LinkedIn Profile</a>
+    </p>
+  </section>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am Shridhar, a passionate developer with strong interest in 
+      computer vision, gesture-based interfaces and modern UI applications.
+      I love building creative, meaningful digital experiences and exploring new technologies.
+    </p>
+  </section>
+  <section id="education">
+    <h2>Education</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Bachelor of Technology (B.Tech)</h3>
+        <p><strong>Branch:</strong> Computer Science And Engineering</p>
+        <p><strong>Year:</strong> 2024–2028</p>
+        <p><strong>College:</strong>Sharad Institute Of Technoloy College Of Engineering Y
+            adrav-Ichalkaranji.</p>
+      </div>
+      <div class="card">
+        <h3>MHT-CET (Entrance Test)</h3>
+        <p><strong>Percentile:</strong>91.13 percentile</p>
+      </div>
+      <div class="card">
+        <h3>Higher Secondary (HSC)</h3>
+        <p><strong>Passing Year:</strong> 2023–2024</p>
+        <p><strong>Percentage:</strong>76.17%</p>
+    </div>
+    <div class="card">
+        <h3>Secondary (SSC)</h3>
+        <p><strong>Passing Year:</strong>2021-2022</p>
+        <p><strong>Percentage</strong>86.20%</p>
+    </div>
+</div>
+  </section>
+<section id="certificates">
+  <h2>Certificates</h2>
+  <div class="projects">
+    <div class="card">
+      <h3><i class="fa-solid fa-certificate"></i>IT Google Career Certificate</h3>
+      <p>Certification of IT Google Career Certificate in IT provided by Cursa Mobile App.</p>
+      <a class="button" href="certificates/ITGoogleCertificate.pdf" target="_blank">
+        View Certificate
+      </a>
+    </div>
+    <div class="card">
+      <h3><i class="fa-solid fa-certificate"></i>Logical Reasoning Certificate</h3>
+      <p>Completed logical reasoning on Cursa Mobile App.</p>
+      <a class="button" href="certificates/LogicalReasoningCertificate.pdf" target="_blank">
+        View Certificate
+      </a>
+    </div>
+    <div class="card">
+      <h3><i class="fa-solid fa-certificate"></i>Web Development</h3>
+      <p>Learned HTML,CSS & JavaScript provided by Programming Hero Mobile App.</p>
+      <a class="button" href="certificates/WebDevelopment.pdf" target="_blank">
+        View Certificate
+      </a>
+    </div>
+<div class="card">
+      <h3><i class="fa-solid fa-certificate"></i>Digital Productivity Certificate</h3>
+      <p>Certification validating fundamentals and products.</p>
+      <a class="button" href="certificates/DigitalProductivityCertificate.pdf" target="_blank">
+        View Certificate
+      </a>
+    </div>
+    <div class="card">
+      <h3><i class="fa-solid fa-certificate"></i>Data Science Certificate</h3>
+      <p>Completed and Understanding data concepts.</p>
+      <a class="button" href="certificates/DataScienceCertificate.pdf" target="_blank">
+        View Certificate
+      </a>
+    </div>
+    <div class="card">
+      <h3><i class="fa-solid fa-certificate"></i>AWS Lambda Certificate</h3>
+      <p>Learned amazon web services.</p>
+      <a class="button" href="certificates/AWSLambdaCertificate.pdf" target="_blank">
+        View Certificate
+      </a>
+    </div>
+  </div>
+</section>
+  <section id="hobbies">
+    <h2>Hobbies & Interests</h2>
+    <div class="skills">
+      <div class="card">Coding & Problem Solving</div>
+      <div class="card">AI & Computer Vision</div>
+      <div class="card">Gaming</div>
+      <div class="card">Traveling</div>
+      <div class="card">Video Editing</div>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2025 Shridhar | Built with HTML, CSS & JavaScript</p>
+  </footer>
+</body>
+</html>
